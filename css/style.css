@@ -1,99 +1,203 @@
-h1 {
-    font-size: 45px;
+
+/* GENERAL DESIGN */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #172B46;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 75px 20px;
+    scroll-margin-top: 65px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
     font-weight: bold;
-      text-align: center;
+    margin-bottom: 25px;
 }
-.whitetitle{
+
+section p {
+    max-width: 950px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.section-intro {
+    margin-bottom: 35px;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    background-color: #172B46;
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #F05A5A !important;
+}
+
+
+/* WELCOME SECTION */
+
+.hero {
+    background: linear-gradient(
+        rgba(12, 35, 61, 0.85),
+        rgba(12, 35, 61, 0.85)
+    ), url("../img/look.jpg");
+
+    background-size: cover;
+    background-position: center;
     color: white;
+    padding: 130px 20px;
 }
-p {
+
+.hero-small {
+    color: #FF7777;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.hero-text {
     font-size: 20px;
-     text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.hero-button {
+    background-color: #B92332;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #8F1825;
     color: white;
 }
-img {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+/* SECTION COLOURS */
+
+.section-dark {
+    background-color: #172B46;
+    color: white;
 }
 
-hr {
-    border: 0;
-    height: 2px;
-    background-color: black;
-    margin: 25px 0;
+.section-light {
+    background-color: #DCEFF7;
+    color: #172B46;
 }
-.section1 {
-    padding: 50px;
-    background-color:darkred;
+
+.section-white {
+    background-color: white;
+    color: #172B46;
+}
+
+
+/* PICTURES */
+
+.gallery-photo {
     width: 100%;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.wave {
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-}
-
-.wave svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.section2 {
-    background-color:;
-    padding: 50px;
-}
-.section3-text{
-    color: darkred;
-}
-.section4 {
-    background-color: darkred;
-    padding: 50px;
-    color:white;
-}
-
-.horizontal-photo {
-    width: 100%;
-    height: 250px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
 }
-.section-divider {
-    border: none;
-    height: 5px;
-    background-color: darkred;
-    margin: 0;
-    opacity: 1;
+
+.gallery-photo:hover {
+    transform: translateY(-5px);
 }
-.section5{
-    color: darkred;
+
+
+/* VIDEOS */
+
+.ratio iframe {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-.section5-text{
-    color: darkred;
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #101D30;
+    color: white;
+    padding: 30px 15px;
 }
-.section6 h1 {
-    color: darkred;
+
+.footer p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
-.lifeguard-video {
-    width: 100%;
-    height: 380px;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 15px;
+
+.footer small {
+    color: #B9C7D8;
 }
-.section6 .row {
-    --bs-gutter-x: 20px;
+
+
+/* PHONE AND TABLET DESIGN */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 50px 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 90px 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .gallery-photo {
+        height: 230px;
+    }
+
+    .navbar-brand {
+        font-size: 19px;
+    }
 }

@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,78 +7,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>LIFEGUARDING</title>
+    <title>Lifeguarding | Stay Safe</title>
 
-    <!-- Bootstrap 5.3 CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Main Title -->
-    <h1 class="text-center">
-        Welcome to my website about lifeguarding
-    </h1>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
 
-    <hr>
+            <a class="navbar-brand fw-bold" href="#home">
+                LIFEGUARDING
+            </a>
 
-    <!-- First Section -->
-    <section class="section1">
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarLinks"
+                aria-controls="navbarLinks" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarLinks">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">Training</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section4">Equipment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section5">First Aid</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section6">Videos</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- WELCOME SECTION -->
+    <header class="hero" id="home">
+
+        <div class="container text-center">
+
+            <p class="hero-small">WATER SAFETY • TRAINING • RESCUE</p>
+
+            <h1>Welcome to Lifeguarding</h1>
+
+            <p class="hero-text">
+                Learn how lifeguards protect swimmers, prevent accidents
+                and help keep everyone safe in the water.
+            </p>
+
+            <a href="#section1" class="btn hero-button">
+                Discover More
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- SECTION 1: WHAT IS LIFEGUARDING -->
+    <section class="section-dark" id="section1">
 
         <div class="container">
 
-            <h1 class="text-center whitetitle">
-                What is lifeguarding?
-            </h1>
+            <h2>What is Lifeguarding?</h2>
 
-            <div class="row">
-
-                <!-- Text -->
-                <div class="col-12">
-                    <p class="lifeguard-text">
-                        Lifeguarding combines proactive safety enforcement with rapid emergency response to prevent drownings and water-related injuries. Beyond basic supervision, modern lifeguarding relies on strict scanning protocols, specialized equipment, and coordinated team responses.
-                    </p>
-                </div>
-
-            </div>
+            <p>
+                Lifeguarding combines proactive safety enforcement with
+                rapid emergency response to prevent drownings and
+                water-related injuries. Beyond basic supervision,
+                modern lifeguarding relies on strict scanning protocols,
+                specialised equipment and coordinated team responses.
+            </p>
 
         </div>
 
     </section>
 
 
-    <!-- Second Section -->
-    <section class="section2">
+    <!-- SECTION 2: WHAT WE LEARN -->
+    <section class="section-light" id="section2">
 
         <div class="container">
 
-            <h1 class="text-center">
-                What do we learn in lifeguarding?
-            </h1>
+            <h2>What Do We Learn in Lifeguarding?</h2>
 
-            <div class="row">
+            <p class="section-intro">
+                Lifeguard training teaches many important skills
+                that help protect people in the water.
+            </p>
 
-                <!-- First Photo -->
+            <div class="row g-4">
+
                 <div class="col-md-4">
                     <img src="img/lifegg.jpg"
-                         class="img-fluid lifeguard-photo"
+                         class="img-fluid gallery-photo"
                          alt="Lifeguard">
                 </div>
 
-                <!-- Second Photo -->
                 <div class="col-md-4">
                     <img src="img/lifeggg.jpg"
-                         class="img-fluid lifeguard-photo"
+                         class="img-fluid gallery-photo"
                          alt="Lifeguard training">
                 </div>
 
-                <!-- Third Photo -->
                 <div class="col-md-4">
                     <img src="img/lifegggg.jpg"
-                         class="img-fluid lifeguard-photo"
+                         class="img-fluid gallery-photo"
                          alt="Lifeguard rescue">
                 </div>
 
@@ -86,112 +143,155 @@
         </div>
 
     </section>
-    <!-- Third Section -->
-<section class="section3">
-<hr class="section-divider">
-    <div class="container">
 
-        <h1 class="text-center">
-        </h1>
 
-        <p class="section3-text">
-           In a lifeguarding course, you learn water rescue techniques, emergency medical care, surveillance strategies, and accident prevention. Training blends classroom lessons with hands-on pool or open-water practice to prepare you for real-world emergencies.Beyond physical rescues and medical care, lifeguarding courses also teach critical decision-making, risk management, and specialized water operations. These advanced skills prepare you to handle high-pressure situations, environmental hazards, and everyday facility safety.
-        </p>
+    <!-- SECTION 3: TRAINING INFORMATION -->
+    <section class="section-white" id="section3">
 
-    </div>
+        <div class="container">
 
-</section>
-<!-- Fourth Section -->
-<section class="section4">
+            <h2>What Does Lifeguard Training Include?</h2>
 
-    <div class="container">
+            <p>
+                In a lifeguarding course, you learn water rescue techniques,
+                emergency medical care, surveillance strategies and
+                accident prevention. Training combines classroom lessons
+                with practical pool or open-water activities to prepare
+                you for emergencies.
 
-        <h1 class="text-center">
-            Lifeguarding skills
-        </h1>
+                You also learn decision-making, risk management and
+                teamwork. These skills help lifeguards handle difficult
+                situations and keep swimming areas safe.
+            </p>
 
-        <div class="row">
+        </div>
 
-            <!-- First Photo -->
-            <div class="col-md-4">
-                <img src="img/redred.jpg"
-                     class="img-fluid horizontal-photo"
-                     alt="Lifeguarding equipment">
-            </div>
+    </section>
 
-            <!-- Second Photo -->
-            <div class="col-md-4">
-                <img src="img/lifelife.jpg"
-                     class="img-fluid horizontal-photo"
-                     alt="Lifeguard equipment">
-            </div>
 
-            <!-- Third Photo -->
-            <div class="col-md-4">
-                <img src="img/look.jpg"
-                     class="img-fluid horizontal-photo"
-                     alt="Rescue equipment">
+    <!-- SECTION 4: EQUIPMENT -->
+    <section class="section-dark" id="section4">
+
+        <div class="container">
+
+            <h2>Lifeguarding Equipment</h2>
+
+            <p class="section-intro">
+                Lifeguards use different equipment to help them
+                supervise swimmers and respond to emergencies.
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <img src="img/redred.jpg"
+                         class="img-fluid gallery-photo"
+                         alt="Lifeguarding equipment">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="img/lifelife.jpg"
+                         class="img-fluid gallery-photo"
+                         alt="Lifeguard equipment">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="img/look.jpg"
+                         class="img-fluid gallery-photo"
+                         alt="Rescue equipment">
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-<!-- Fifth Section -->
-<section class="section5">
 
-    <div class="container">
+    <!-- SECTION 5: FIRST AID -->
+    <section class="section-light" id="section5">
 
-        <h1 class="text-center">
-            why do life guards need to know first aide and what first aide skills should they know
-        </h1>
+        <div class="container">
 
-        <p class="section5-text">
-            Lifeguards need first aid and CPR training because they are the immediate first responders at pools, water parks, and open-water beaches. In water-related or cardiac emergencies, time is critical: irreversible brain damage can start within 4 to 6 minutes of oxygen deprivation, and survival odds for sudden cardiac arrest drop by roughly 10% for every minute that passes without intervention. Lifeguards bridge the vital gap from the moment an accident happens until emergency medical services (EMS) arrive.
-        </p>
+            <h2>Why Do Lifeguards Need First Aid Skills?</h2>
 
-    </div>
+            <p>
+                Lifeguards need first aid and CPR training because they
+                may be the first people to respond when an emergency
+                happens at a swimming pool, water park or beach.
 
-</section>
+                They need to recognise emergencies, provide appropriate
+                first aid and contact emergency services when necessary.
+                These skills help protect swimmers and can save lives.
+            </p>
 
-<!-- Sixth Section -->
-<section class="section6">
+        </div>
 
-    <div class="container">
+    </section>
 
-        <h1 class="text-center">
-            Lifeguarding Videos
-        </h1>
 
-        <div class="row">
+    <!-- SECTION 6: VIDEOS -->
+    <section class="section-white" id="section6">
 
-            <!-- First Video -->
-            <div class="col-md-6">
-                <iframe
-                    class="lifeguard-video"
-                    src="https://www.youtube.com/embed/Hffo4f9mr2g"
-                    title="Lifeguarding video 1"
-                    allowfullscreen>
-                </iframe>
-            </div>
+        <div class="container">
 
-            <!-- Second Video -->
-            <div class="col-md-6">
-                <iframe
-                    class="lifeguard-video"
-                    src="https://www.youtube.com/embed/7s-xmrIj6tc"
-                    title="Lifeguarding video 2"
-                    allowfullscreen>
-                </iframe>
+            <h2>Lifeguarding Videos</h2>
+
+            <p class="section-intro">
+                Watch these videos to learn more about lifeguarding.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- First Video -->
+                <div class="col-md-6">
+
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/Hffo4f9mr2g"
+                            title="Lifeguarding video 1"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <!-- Second Video -->
+                <div class="col-md-6">
+
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/7s-xmrIj6tc"
+                            title="Lifeguarding video 2"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <p>Stay Safe. Stay Aware. Save Lives.</p>
+
+            <small>© 2026 Lifeguarding Website</small>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
